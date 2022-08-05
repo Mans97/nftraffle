@@ -18,7 +18,7 @@ const stdlib = loadStdlib(process.env);
   const ctcAlice = accAlice.contract(backend);
   
   console.log("Creator is creating the NFT")
-  const theNFT = await stdlib.launchToken(accAlice, "The Monas", "NFT", {supply: nftSupply})
+  const theNFT = await stdlib.launchToken(accAlice, "The Monas", "NFT", {supply: 1})
   const nftParams = {
     nftID: parseInt(theNFT.id),
     numTickets: NUMTICKETS,
